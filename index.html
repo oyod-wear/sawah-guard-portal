@@ -1,34 +1,19 @@
-import React from 'react';
-
-export default function Home() {
-  return (
-    <div className="min-h-screen bg-slate-900 text-white p-8 font-sans">
-      <header className="max-w-6xl mx-auto border-b border-slate-800 pb-6 mb-10">
-        <h1 className="text-4xl font-black text-green-500 tracking-tighter">SAWAH GUARD <span className="text-white">v1.0</span></h1>
-        <p className="text-slate-400 mt-2">Intelijen Lahan Pertanian Kendal | Berakar. Bergerak. Berarti.</p>
-      </header>
-
-      <main className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Card Ringkasan */}
-        <div className="bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-xl">
-          <h3 className="text-slate-400 uppercase text-xs font-bold tracking-widest mb-2">Total LBS Terpantau</h3>
-          <p className="text-3xl font-bold">22.450,8 <span className="text-sm font-normal">Ha</span></p>
-        </div>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Sawah Guard Kendal | OYOD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white font-sans">
+    <div class="max-w-4xl mx-auto py-20 px-6">
+        <h1 class="text-5xl font-bold text-green-400 mb-4">SAWAH GUARD KENDAL</h1>
+        <p class="text-xl text-slate-400 mb-8 italic">Berakar. Bergerak. Berarti.</p>
         
-        <div className="bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-xl">
-          <h3 className="text-slate-400 uppercase text-xs font-bold tracking-widest mb-2">Status Anomali</h3>
-          <p className="text-3xl font-bold text-yellow-500">12 <span className="text-sm font-normal text-white">Desa Waspada</span></p>
+        <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 shadow-2xl">
+            <h2 class="text-2xl font-semibold mb-4">Status Baseline Database:</h2>
+            <div id="status" class="text-green-500 font-mono">Memuat data dari OYOD Cloud...</div>
         </div>
-
-        <div className="bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-xl">
-          <h3 className="text-slate-400 uppercase text-xs font-bold tracking-widest mb-2">Sync Terakhir</h3>
-          <p className="text-3xl font-bold text-green-500">LIVE</p>
-        </div>
-      </main>
-
-      <footer className="max-w-6xl mx-auto mt-20 text-slate-500 text-sm">
-        &copy; 2026 AgroEduLabs x OYOD Wear.id
-      </footer>
     </div>
-  );
-}
+</body>
+</html>
